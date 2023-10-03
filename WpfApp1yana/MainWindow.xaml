@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1yana.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1yana"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="PeachPuff">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock  Grid.Row="2" Text="Имя пользователя: " FontSize="15" Margin="153,151,-153,-169"/>
+        <TextBox Name="txtUsername" Margin="290,152,146,-162" Grid.Row="2"/>
+        <TextBlock  Grid.Row="2" Text="Пароль: " FontSize="15" Margin="153,177,-153,-193"/>
+        <TextBox Name="txtPassword" Margin="290,183,146,-187" Grid.Row="2"/>
+        <Button Grid.Row="2" Content="Войти" Click="login_click" Margin="202,239,202,-239"/>
+
+    </Grid>
+</Window>
